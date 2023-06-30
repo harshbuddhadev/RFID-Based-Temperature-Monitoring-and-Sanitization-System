@@ -3,34 +3,29 @@ import os
 def vali(tagid):
     id=""
     if(tagid=="75005339405F"):
-        id=["Rachit","Sharma","70331019040"]
-    # elif(tagid=="2400352DD4E8"):
-    #     id=["Harsh","Buddhadev","70331019003"]
+        id=["Rachit","S","001"]
+    elif(tagid=="2400352DD4E8"):
+        id=["Harsh","B","002"]
     elif(tagid=="5800CA1337B6"):
-        id=["Shinty","Sharma","01234"]
+        id=["Namr","S","003"]
     elif(tagid=="5800CA1AE76F"):
-        id=["Bunty","LifeBuoy","9876"]
+        id=["Bunty","L","004"]
     elif(tagid=="5800CA0D6EF1"):
-        id=["Peter","Daruwala","6543"]
+        id=["Peter","D","005"]
     elif(tagid=="5800CA138D0C"):
-        id=["Titu","Mama","4567"]
+        id=["Karan","M","006"]
     elif(tagid=="5800C9EFFE80"):
-        id=["Jai","J.","1987"]
-    elif(tagid=="5800C85C74B8"):
-        id=["Bhaalu","Sharma","123987"]
+        id=["Jai","J","007"]
     elif(tagid=="5800C9A6B582"):
-        id=["Karan","Gandi","70331019040"]
+        id=["Karan","G","008"]
     elif(tagid=="5800CA1636B2"):
-        id=["Abhishek","Garg","70331019007"]
+        id=["Abhishek","G","009"]
     else:
         id=[]
         
 
     return id
 
-
-# while(True):
-#     test=str(os.popen("sudo head -c 12 /dev/ttyUSB0").read())
-#     print(validate(test))
-
-#     break
+if __name__ == "__main__":
+    test=str(os.popen("sudo head -c 12 /dev/ttyUSB0").read())
+    print(vali(test))

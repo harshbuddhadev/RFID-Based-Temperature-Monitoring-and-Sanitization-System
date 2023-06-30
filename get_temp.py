@@ -69,13 +69,12 @@ sensor = MLX90614()
 
 def temp():
     # sleep(1.75)
-    temp1=sensor.get_obj_temp()
-    obj_temp=float("{:.2f}".format(temp1))
-    conv_temp=obj_temp * 1.8 + 32
-    print("Object Temp: ",obj_temp,chr(176),"C")
-    # print("Object Temp: ",conv_temp,chr(176),"F")
-    return(obj_temp)
+    temp1=sensor.get_obj_temp() #Fetch Temp from sensor
+    obj_temp=float("{:.2f}".format(temp1)) #Limit to 2 decimal places
+    print("Object Temp: ",obj_temp,chr(176),"C") #Print Temp in Celcius
+    return(obj_temp) #Return Temp in Celsius
 
-# while(True):
-#     print("lol")
-#     temp()
+if __name__ == "__main__":
+    while(True):
+        temp()
+        sleep(1)
