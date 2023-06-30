@@ -3,3 +3,4 @@
 *pycache*/
 .vscode/
 *.pickle
+Ignore/
