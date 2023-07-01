@@ -1,6 +1,7 @@
 *.pyc
 *.pyo
-*pycache*/
+__pycache__/
 .vscode/
+git-sizer.exe
 *.pickle
 Ignore/
